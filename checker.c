@@ -20,18 +20,18 @@ int isChargeRateValid(float chargeRate) {
 // Function to check if battery parameters are within acceptable ranges
 int batteryIsOk(float temperature, float soc, float chargeRate) {
     if (!isTemperatureValid(temperature)) {
-        printf("Temperature out of range!\n");
+        // printf("Temperature out of range!\n");
         return 0;
     }
-    if (!isSocValid(soc)) {
-        printf("State of Charge out of range!\n");
-        return 0;
-    }
-    if (!isChargeRateValid(chargeRate)) {
-        printf("Charge Rate out of range!\n");
-        return 0;
-    }
-    // return 1;
+    // if (!isSocValid(soc)) {
+    //     printf("State of Charge out of range!\n");
+    //     return 0;
+    // }
+    // if (!isChargeRateValid(chargeRate)) {
+    //     printf("Charge Rate out of range!\n");
+    //     return 0;
+    // }
+    // // return 1;
 }
 
 // Main function for testing
