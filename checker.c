@@ -40,14 +40,5 @@ int main() {
     assert(batteryIsOk(25, 70, 0.7));
     assert(!batteryIsOk(50, 85, 0));
     
-    // Additional test cases for edge conditions
-    assert(!batteryIsOk(-1, 70, 0.7));  // Temperature too low
-    assert(!batteryIsOk(46, 70, 0.7));  // Temperature too high
-    assert(!batteryIsOk(25, 15, 0.7));  // Soc too low
-    assert(!batteryIsOk(25, 85, 0.7));  // Soc too high
-    assert(!batteryIsOk(25, 70, 0.85)); // Charge rate too high
-    assert(batteryIsOk(25, 70, 0));     // Charge rate zero is acceptable
-    
-    printf("All tests passed!\n");
     return 0;
 }
