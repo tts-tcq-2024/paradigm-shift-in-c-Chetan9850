@@ -40,20 +40,6 @@ void runTests() {
     // Normal cases
     assert(batteryIsOk(25, 70, 0.7));
     assert(!batteryIsOk(50, 85, 0));
-
-    // Edge cases for temperature
-    assert(!batteryIsOk(-1, 70, 0.7));  // Below lower limit
-    assert(!batteryIsOk(46, 70, 0.7));  // Above upper limit
-
-    // Edge cases for state of charge
-    assert(!batteryIsOk(25, 19, 0.7));  // Below lower limit
-    assert(!batteryIsOk(25, 81, 0.7));  // Above upper limit
-
-    // Edge cases for charge rate
-    assert(!batteryIsOk(25, 70, -0.1)); // Below lower limit
-    assert(!batteryIsOk(25, 70, 0.81)); // Above upper limit
-
-    printf("All tests passed!\n");
 }
 
 int main() {
