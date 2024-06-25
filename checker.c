@@ -2,9 +2,9 @@
 #include <assert.h>
 
 int main() {
-   float temperature;
-   float soc; 
-   float chargeRate;
+   float temperature = 25;
+   float soc = 70; 
+   float chargeRate = 0.7;
    
    assert(temperature == 25);
    assert(soc == 70);
