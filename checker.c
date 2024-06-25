@@ -2,9 +2,9 @@
 #include <assert.h>
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
-    float isTemperatureOk = (temperature >= 0 && temperature <= 45);
-    float isSocOk = (soc >= 20 && soc <= 80);
-    float isChargeRateOk = (chargeRate <= 0.8);
+    int isTemperatureOk = (temperature >= 0 && temperature <= 45);
+    int isSocOk = (soc >= 20 && soc <= 80);
+    int isChargeRateOk = (chargeRate <= 0.8);
 
     if (!isTemperatureOk || !isSocOk || !isChargeRateOk) {
         if (!isTemperatureOk) {
