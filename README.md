@@ -59,3 +59,9 @@ Shorten the Semantic distance
 - Functional to express relation between input and output
 - Object oriented to encapsulate state with actions
 - Apect oriented to capture repeating aspects
+
+## Extending and Refactoring
+
+-Extension no 02: Support a language in addition to English
+-Early Warning-work condition for checking Warning: Approaching discharge and Warning: 
+-Approaching charge-peak and also language selection between english and german for printing the message.
